@@ -89,8 +89,7 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
   - Optional replicator–mutator extension.  
 - **Configuration** (`config.py`)  
   - Central parameters: population size, β, lexicon ranges, temperature values, number of generations.  
-- **Data & Plots**  
-  - **`data/`** (git-ignored): raw CIELAB and crowdsourced CSV.  
+- **Plots**  
   - **`plots/`**: all generated graphs (fitness curves, scatterplots, human vs. model comparisons).  
   - **`Presentation.pptx`**: full slide deck with results.
 
@@ -107,7 +106,6 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 ├── simulation.py
 ├── experiments.py
 ├── config.py
-├── data/                    # ignored: raw CIELAB and human CSV
 ├── plots/                   # generated figures
 ├── Presentation.pptx        # slide deck
 ├── requirements.txt
