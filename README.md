@@ -43,7 +43,6 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
      - **Human-Derived Language:** built from our crowdsourced survey data.  
      - **Soft KMeans Language:** IB-inspired clustering encoder.  
      - **Random Baseline Language:** uniform random assignment.  
-     Confusion-matrix heatmaps and fitness curves for each are in `plots/`.
 
 2. **Lexicon-Size Sweep** - Measured fitness across lexica of size 2–20 for random, KMeans, and human-derived encoders.  
 
