@@ -1,9 +1,12 @@
-
 # Final Project: Color-Naming Evolution
 
-
-
----
+## Background
+This repository contains the final project for UBC course **67562: Dynamics, Computation & Networks**. Our aim was to critically examine the article  
+> **“Efficient compression in color naming and its evolution”** by Zaslavsky, Kemp, Regier & Tishby.  
+Specifically, we ask:  
+- How do discrete color-naming systems emerge under the Information Bottleneck framework?  
+- In what ways do replicator dynamics shape the balance between communicative efficiency (informativeness) and complexity (lexicon size)?  
+- How closely can simulated languages reproduce real human color labels when benchmarked against crowdsourced English data?
 
 ## Research Question
 
