@@ -1,4 +1,4 @@
-# color-naming-evolution````markdown
+
 # Final Project: Color-Naming Evolution
 
 **Course:** 67562 – Dynamics, Computation & Networks  
