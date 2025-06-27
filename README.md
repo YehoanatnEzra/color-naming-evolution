@@ -15,7 +15,7 @@ Sub-question:
 ---
 ## Our Project and Experiment
 
-# Crowdsourced Human Benchmark
+### Crowdsourced Human Benchmark
 To ground our simulations in real behavior, we ran a color-naming survey with **50 participants**. Each person labeled **330 evenly-spaced CIELAB swatches** using one of the 11 basic English color terms (e.g., red, blue, green, etc.). In total we gathered **16,500 label assignments**, which we then:
 
 1. **Aggregated** — for each swatch, counted how often each name was chosen.  
@@ -28,7 +28,7 @@ The resulting distribution defines our **Human-Derived Language**, used alongsid
 - **Lexicon-size and environment analyses**
 
 
-# Different Environments
+### Different Environments
 Unlike the original paper’s uniform sampling, we model five **artificial perceptual environments** with distinct color distributions to test how context shapes category systems:
 1. **Uniform**  
    - Flat sampling over the full CIELAB gamut.  
@@ -41,7 +41,7 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 5. **Sunset**  
    - Skews toward warm reds, oranges, and purples (twilight sky palette).
 
-# Experiments Conducted
+### Experiments Conducted
 
 1. **Language Selection Showcase**  
    - Presented three representative language systems side by side:  
@@ -64,7 +64,7 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 
 > All figures, heatmaps, and detailed observations are available in `plots/` and the `Presentation.pptx`.
 
-# Results & Takeaways
+### Results & Takeaways
 
 * **Structured encoders** (soft KMeans) consistently outperform random baselines across lexicon sizes.
 * There exists a **sweet-spot lexicon size** balancing complexity and accuracy.
