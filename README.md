@@ -123,10 +123,3 @@ If you use this code, please cite:
 
 ---
 
-## License & Contribution
-
-This project is MIT-licensed. See `LICENSE`.
-Contributions, issues, and pull requests are welcome—please read `CONTRIBUTING.md` for guidelines.
-
-```
-```
