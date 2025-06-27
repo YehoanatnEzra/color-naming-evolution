@@ -18,21 +18,31 @@ Sub-question:
 
 To ground our simulations in real behavior, we ran a color-naming survey with **50 participants**. Each person labeled **330 evenly-spaced CIELAB swatches** using one of the 11 basic English color terms (e.g., red, blue, green, etc.). In total we gathered **16,500 label assignments**, which we then:
 
-1. **Cleaned** — removed any incomplete responses (<90% of swatches).  
-2. **Aggregated** — for each swatch, counted how often each name was chosen.  
-3. **Normalized** — computed  
-   \[
-     P_{\text{human}}(\text{name} \mid \text{swatch})
-     = \frac{\text{count(name, swatch)}}{\sum_{\text{name}} \text{count(name, swatch)}}.
-   \]
+1. **Aggregated** — for each swatch, counted how often each name was chosen.  
+2. **Modeled** — computed the empirical probability of each swatch being labeled with each English color term:  
 
 The resulting distribution defines our **Human-Derived Language**, used alongside the Random and Soft KMeans encoders for:
 
 - **Fitness comparison** (β·Accuracy − Complexity)  
 - **Confusion-matrix heatmaps**  
-- **Lexicon-size and environment analyses**  
+- **Lexicon-size and environment analyses**
 
-All raw CSVs are in `data/` (git-ignored), and the full set of heatmaps and plots appear in `plots/` and `Presentation.pptx`.
+
+## Different Environments
+
+Unlike the original paper’s uniform sampling, we model five **artificial perceptual environments** with distinct color distributions to test how context shapes category systems:
+
+1. **Uniform**  
+   - Flat sampling over the full CIELAB gamut.  
+2. **Beach**  
+   - Emphasizes sandy yellows and ocean blues (e.g., C∗a clustered around warm, light hues).  
+3. **Forest**  
+   - Dense greens and browns dominate the distribution (mimicking foliage).  
+4. **Urban**  
+   - Centers on grays, neutrals, and occasional bright accents (street signs, buildings).  
+5. **Sunset**  
+   - Skews toward warm reds, oranges, and purples (twilight sky palette).
+
 
 ---
 
@@ -60,8 +70,6 @@ All raw CSVs are in `data/` (git-ignored), and the full set of heatmaps and plot
 > All figures, heatmaps, and detailed observations are available in `plots/` and the `Presentation.pptx`.  
 
 
-## Project Overview
-
 We implement a cutting-edge Python simulation that models the evolution of color-naming languages. My approach combines:
 
 - **Information Bottleneck (IB):**  
@@ -74,32 +82,9 @@ We implement a cutting-edge Python simulation that models the evolution of color
 - **Human Benchmark:**  
   - Integrate crowdsourced English color-labeling data (participants labeled hundreds of CIELAB swatches) as a real-world lexicon to benchmark simulated results.
 
-## Cognitive Environments
-
-Unlike the original paper’s uniform sampling, we model five **artificial perceptual environments** with distinct color distributions to test how context shapes category systems:
-
-1. **Uniform**  
-   - Flat sampling over the full CIELAB gamut.  
-2. **Beach**  
-   - Emphasizes sandy yellows and ocean blues (e.g., C∗a clustered around warm, light hues).  
-3. **Forest**  
-   - Dense greens and browns dominate the distribution (mimicking foliage).  
-4. **Urban**  
-   - Centers on grays, neutrals, and occasional bright accents (street signs, buildings).  
-5. **Sunset**  
-   - Skews toward warm reds, oranges, and purples (twilight sky palette).
-
-Each environment defines a different \(P(U)\) for the IB decoder, allowing us to see how environmental structure drives the evolution of distinct lexica.
-
 ---
 
-## Crowdsourced Human Benchmark
 
-…  
-(keep the rest as before)
-
-
----
 
 ## Key Components
 
