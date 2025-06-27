@@ -12,7 +12,6 @@ Sub-question:
 - How does the lexicon size affects the fitness of the language?
 - How languages adapt to different environments?
 
----
 ## Simulation Framework & Experiments
 
 ### Crowdsourced Human Benchmark
