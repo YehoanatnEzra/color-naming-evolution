@@ -1,6 +1,4 @@
 # Final Project: Color-Naming Evolution
-
-## Background
 This repository contains the final project for UBC course **67562: Dynamics, Computation & Networks**. Our aim was to critically examine the article  
 > **“Efficient compression in color naming and its evolution”** by Zaslavsky, Kemp, Regier & Tishby.  
 Specifically, we ask:  
