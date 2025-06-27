@@ -38,18 +38,18 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 
 ### Experiments Conducted
 
-1. **Language Selection Showcase** - Presented three representative language systems side by side:  
-     - **Human-Derived Language:** built from our crowdsourced survey data.  
-     - **Soft KMeans Language:** IB-inspired clustering encoder.  
-     - **Random Baseline Language:** uniform random assignment.  
+1. **Language Selection Showcase** - Presented three representative language systems side by side:
+   - **Human-Derived Language:** built from our crowdsourced survey data.
+   - **Soft KMeans Language:** IB-inspired clustering encoder.  
+   - **Random Baseline Language:** uniform random assignment.
+     
+3. **Lexicon-Size Sweep** - Measured fitness across lexica of size 2–20 for random, KMeans, and human-derived encoders.  
 
-2. **Lexicon-Size Sweep** - Measured fitness across lexica of size 2–20 for random, KMeans, and human-derived encoders.  
+4. **Sharpness Variation** - Fixed lexicon size, varied temperature to map the accuracy–complexity frontier.  
 
-3. **Sharpness Variation** - Fixed lexicon size, varied temperature to map the accuracy–complexity frontier.  
+5. **Multi-Environment Analysis** - Identified optimal category systems across uniform, beach, forest, urban, and sunset spaces.  
 
-4. **Multi-Environment Analysis** - Identified optimal category systems across uniform, beach, forest, urban, and sunset spaces.  
-
-5. **Human Benchmark Comparison** - Direct comparison of model confusion matrices to the crowdsourced human lexicon.  
+6. **Human Benchmark Comparison** - Direct comparison of model confusion matrices to the crowdsourced human lexicon.  
 
 ### Results & Takeaways
 
