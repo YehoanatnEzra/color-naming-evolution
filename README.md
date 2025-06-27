@@ -73,28 +73,6 @@ I implement a cutting-edge Python simulation that models the evolution of color-
 > See the full set of graphs and qualitative observations in the Presentation (`Presentation.pptx`) and the `plots/` folder.
 
 ---
-
-## Installation & Usage
-
-```bash
-git clone https://github.com/your-username/67562-dynamics-networks-computation.git
-cd 67562-dynamics-networks-computation
-pip install -r requirements.txt
-````
-
-* **Run the full simulation:**
-
-  ```bash
-  python simulation.py
-  ```
-* **Execute a specific experiment:**
-
-  ```bash
-  python experiments.py --experiment kmeans_vs_random
-  ```
-
----
-
 ## Project Structure
 
 ```
