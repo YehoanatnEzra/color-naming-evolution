@@ -30,16 +30,11 @@ The resulting distribution defines our **Human-Derived Language**, used alongsid
 
 ### Different Environments
 Unlike the original paper’s uniform sampling, we model five **artificial perceptual environments** with distinct color distributions to test how context shapes category systems:
-1. **Uniform**  
-   - Flat sampling over the full CIELAB gamut.  
-2. **Beach**  
-   - Emphasizes sandy yellows and ocean blues (e.g., C∗a clustered around warm, light hues).  
-3. **Forest**  
-   - Dense greens and browns dominate the distribution (mimicking foliage).  
-4. **Urban**  
-   - Centers on grays, neutrals, and occasional bright accents (street signs, buildings).  
-5. **Sunset**  
-   - Skews toward warm reds, oranges, and purples (twilight sky palette).
+- **Uniform**  - Flat sampling over the full CIELAB gamut.  
+- **Beach** - Emphasizes sandy yellows and ocean blues (e.g., C∗a clustered around warm, light hues).  
+- **Forest** - Dense greens and browns dominate the distribution (mimicking foliage).  
+- **Urban** - Centers on grays, neutrals, and occasional bright accents (street signs, buildings).  
+- **Sunset** - Skews toward warm reds, oranges, and purples (twilight sky palette).
 
 ### Experiments Conducted
 
@@ -50,17 +45,13 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
      - **Random Baseline Language:** uniform random assignment.  
    - Confusion-matrix heatmaps and fitness curves for each are in `plots/`.
 
-2. **Lexicon-Size Sweep**  
-   - Measured fitness across lexica of size 2–20 for random, KMeans, and human-derived encoders.  
+2. **Lexicon-Size Sweep** - Measured fitness across lexica of size 2–20 for random, KMeans, and human-derived encoders.  
 
-3. **Sharpness Variation**  
-   - Fixed lexicon size, varied temperature to map the accuracy–complexity frontier.  
+3. **Sharpness Variation** - Fixed lexicon size, varied temperature to map the accuracy–complexity frontier.  
 
-4. **Multi-Environment Analysis**  
-   - Identified optimal category systems across uniform, beach, forest, urban, and sunset spaces.  
+4. **Multi-Environment Analysis** - Identified optimal category systems across uniform, beach, forest, urban, and sunset spaces.  
 
-5. **Human Benchmark Comparison**  
-   - Direct comparison of model confusion matrices to the crowdsourced human lexicon.  
+5. **Human Benchmark Comparison** - Direct comparison of model confusion matrices to the crowdsourced human lexicon.  
 
 > All figures, heatmaps, and detailed observations are available in `plots/` and the `Presentation.pptx`.
 
@@ -125,11 +116,6 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 └── LICENSE
 ```
 
----
-
-
----
-
 ## Extensibility
 
 You can easily:
@@ -138,15 +124,4 @@ You can easily:
 * Plug in different encoder/decoder strategies (e.g., Gaussian Mixtures).
 * Explore replicator–mutator dynamics with custom mutation rates.
 * Use the codebase to model other semantic domains beyond color.
-
----
-
-## Citation
-
-If you use this code, please cite:
-
-> Zaslavsky, N., Kemp, C., Regier, T., & Tishby, N. (2018). *Efficient compression in color naming and its evolution*. PNAS.
-
----
-
 
