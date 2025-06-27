@@ -51,14 +51,15 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
 
 5. **Human Benchmark Comparison** - Direct comparison of model confusion matrices to the crowdsourced human lexicon.  
 
-> All figures, heatmaps, and detailed observations are available in `plots/` and the `Presentation.pptx`.
-
 ### Results & Takeaways
 
 * **Structured encoders** (soft KMeans) consistently outperform random baselines across lexicon sizes.
 * There exists a **sweet-spot lexicon size** balancing complexity and accuracy.
 * **Environmental structure** (e.g., “forest” vs. “urban”) shifts optimal category boundaries.
 * The simulated systems **approach** but do not fully match human crowd data—highlighting areas for future refinement.
+
+
+> All figures, heatmaps, and detailed observations are available in `plots/` and the `Presentation.pptx`.
 
 ---
 
