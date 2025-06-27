@@ -94,24 +94,6 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
   - **`Presentation.pptx`**: full slide deck with results.
 
 ---
-## Project Structure
-
-```
-.
-├── environment.py
-├── language.py
-├── encoder_strategies.py
-├── utils.py
-├── simulation_initializations.py
-├── simulation.py
-├── experiments.py
-├── config.py
-├── plots/                   # generated figures
-├── Presentation.pptx        # slide deck
-├── requirements.txt
-├── README.md                # this document
-└── LICENSE
-```
 
 ## Extensibility
 
@@ -123,8 +105,9 @@ You can easily:
 * Use the codebase to model other semantic domains beyond color.
 
 ```
+---
 
-  ## Feedback & Contact
+## Feedback & Contact
 If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
 - Email: yonzra12@gmail.com
 - Linkdin: www.linkedin.com/in/yehonatanezra
