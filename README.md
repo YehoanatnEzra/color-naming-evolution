@@ -1,14 +1,13 @@
 # Final Project: Color-Naming Evolution
 This repository contains the final project for Huji course Dynamics, Computation & Networks. Our aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
 Link to the article: https://sites.socsci.uci.edu/~rfutrell/readings/zaslavsky2018efficient.pdf).  
-Specifically, we ask:  
-- How do discrete color-naming systems emerge under the Information Bottleneck framework?  
-- In what ways do replicator dynamics shape the balance between communicative efficiency (informativeness) and complexity (lexicon size)?  
-- How closely can simulated languages reproduce real human color labels when benchmarked against crowdsourced English data?
+Specifically, we ask:
+- Random color space vs k-means color space vs Human made color space.
+- How does the lexicon size affects the fitness of the language?
+- How languages adapt to different environments?
 
 ## Research Question
-
-How do human-like color-naming systems evolve under the Information Bottleneck framework combined with replicator dynamics, and how do they balance efficiency (informativeness) and complexity (lexicon size) across different perceptual environments?
+How do specific structural and typological characteristics of languages (e.g., number of basic color terms, focal color distributions, semantic domain granularity) influence their communicative fitness under the Information Bottleneck framework?
 
 ---
 
