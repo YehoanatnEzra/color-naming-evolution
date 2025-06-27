@@ -1,5 +1,5 @@
 # Final Project: Color-Naming Evolution
-This repository contains the final project for Huji course Dynamics, Computation & Networks. Our aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
+This repository contains the final project for Huji course Dynamics, Computation & Networks. My aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
 Link to the article: https://sites.socsci.uci.edu/~rfutrell/readings/zaslavsky2018efficient.pdf). 
 
 ## Research Question
