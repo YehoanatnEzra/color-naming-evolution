@@ -1,5 +1,5 @@
 # Final Project: Color-Naming Evolution
-This repository contains the final project for Huji course **67562: Dynamics, Computation & Networks**. Our aim was to critically examine the article  
+This repository contains the final project for Huji course Dynamics, Computation & Networks**. Our aim was to critically examine the article  
 > **“Efficient compression in color naming and its evolution”** by Zaslavsky, Kemp, Regier & Tishby.  
 Specifically, we ask:  
 - How do discrete color-naming systems emerge under the Information Bottleneck framework?  
