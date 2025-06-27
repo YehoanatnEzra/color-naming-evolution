@@ -104,9 +104,6 @@ You can easily:
 * Explore replicator–mutator dynamics with custom mutation rates.
 * Use the codebase to model other semantic domains beyond color.
 
-```
----
-
 ## Feedback & Contact
 If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
 - Email: yonzra12@gmail.com
