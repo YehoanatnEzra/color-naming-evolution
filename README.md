@@ -1,6 +1,6 @@
 # Final Project: Color-Naming Evolution
 
-This repository contains the final project for Huji course Dynamics, Computation & Networks. Our aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
+This repository contains the final project for Huji course Dynamics, Computation & Networks. My aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
 
 ![image](https://github.com/user-attachments/assets/18429d83-cf30-4796-a9dc-26578baaa5b5)
 
@@ -13,7 +13,7 @@ Sub-question:
 - How languages adapt to different environments?
 
 ---
-## Our Project and Experiment
+## Simulation Framework & Experiments
 
 ### Crowdsourced Human Benchmark
 To ground our simulations in real behavior, we ran a color-naming survey with **50 participants**. Each person labeled **330 evenly-spaced CIELAB swatches** using one of the 11 basic English color terms (e.g., red, blue, green, etc.). In total we gathered **16,500 label assignments**, which we then:
@@ -123,4 +123,11 @@ You can easily:
 * Plug in different encoder/decoder strategies (e.g., Gaussian Mixtures).
 * Explore replicator–mutator dynamics with custom mutation rates.
 * Use the codebase to model other semantic domains beyond color.
+
+```
+
+  ## Feedback & Contact
+If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
+- Email: yonzra12@gmail.com
+- Linkdin: www.linkedin.com/in/yehonatanezra
 
