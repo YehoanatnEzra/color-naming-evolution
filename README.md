@@ -93,8 +93,6 @@ Unlike the original paper’s uniform sampling, we model five **artificial perce
   - **`plots/`**: all generated graphs (fitness curves, scatterplots, human vs. model comparisons).  
   - **`Presentation.pptx`**: full slide deck with results.
 
----
-
 ## Extensibility
 
 You can easily:
