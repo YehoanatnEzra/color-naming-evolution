@@ -1,6 +1,6 @@
 # Final Project: Color-Naming Evolution
 
-This repository contains the final project for Huji course Dynamics, Computation & Networks. My aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
+This repository contains the final project for Huji course Dynamics, Computation & Networks. Our aim was to critically examine the article **Efficient compression in color naming and its evolution**  by Zaslavsky, Kemp, Regier & Tishby.
 
 ![image](https://github.com/user-attachments/assets/18429d83-cf30-4796-a9dc-26578baaa5b5)
 
@@ -16,7 +16,7 @@ Sub-question:
 
 ## Project Overview
 
-I implement a cutting-edge Python simulation that models the evolution of color-naming languages. My approach combines:
+We implement a cutting-edge Python simulation that models the evolution of color-naming languages. My approach combines:
 
 - **Information Bottleneck (IB):**  
   - Derive soft encoder–decoder mappings that compress continuous CIELAB color stimuli into discrete categories while preserving relevant perceptual information.  
