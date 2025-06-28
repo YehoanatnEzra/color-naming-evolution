@@ -127,10 +127,10 @@ def plot_kmeans_fitness_all_envs(env_specs):
 
 
 def test_compare_three_english_variants(env):
-    # 1) Load the human‐judgment file
+    # Load the human‐judgment file
     df = pd.read_csv("data/English.csv")
 
-    # 2) Identify the percentage columns and parse them via regex
+    # Identify the percentage columns and parse them via regex
     perc_cols = df.columns[4:]
     perc = []
     for col in perc_cols:
@@ -139,7 +139,7 @@ def test_compare_three_english_variants(env):
             raise ValueError(f"Cannot parse percentage from column name: {col}")
         perc.append(float(m.group(1)) / 100)
 
-    # 3) Build the full “light/dark X” distribution (dist1)
+    #  Build the full “light/dark X” distribution (dist1)
     unique_terms = sorted({t for c in perc_cols for t in df[c].unique()})
     term_idx = {t:i for i,t in enumerate(unique_terms)}
     M, K1 = len(df), len(unique_terms)
@@ -148,7 +148,7 @@ def test_compare_three_english_variants(env):
         for col, p in zip(perc_cols, perc):
             dist1[i, term_idx[row[col]]] += p
 
-    # 4) Collapse to base colors (dist2)
+    #  Collapse to base colors (dist2)
     bases = [t.split(' ',1)[-1] if ' ' in t else t for t in unique_terms]
     unique_bases = sorted(set(bases))
     base_idx = {b:i for i,b in enumerate(unique_bases)}
@@ -158,7 +158,7 @@ def test_compare_three_english_variants(env):
         b = t.split(' ',1)[-1] if ' ' in t else t
         dist2[:, base_idx[b]] += dist1[:, i_t]
 
-    # 5) Shade‐only collapse (dist3)
+    #  Shade‐only collapse (dist3)
     dist3 = np.zeros((M,2))  # 0=dark, 1=light
     for t, i_t in term_idx.items():
         if t == 'white' or t.startswith('light '):
@@ -166,7 +166,7 @@ def test_compare_three_english_variants(env):
         else:
             dist3[:,0] += dist1[:,i_t]
 
-    # 6) Load sim environment & compute metrics
+    #  Load sim environment & compute metrics
     cog, ms = env.cognitive_source, env.meaning_space
     I_MU = utils.compute_I_MU(cog, ms, config.SIGMA)
 
@@ -182,32 +182,31 @@ def test_compare_three_english_variants(env):
         "Shade only":      dist3,
     }
 
-    # --- Print out metrics ---
+    #  Print out metrics 
     print(f"{'Variant':25s} {'Complexity':>12s} {'Accuracy':>12s} {'Fitness':>12s}")
     print("-"*64)
     for name, enc in variants.items():
         c, a, f = metrics_for(enc)
         print(f"{name:25s} {c:12.4f} {a:12.4f} {f:12.4f}")
 
-    # --- INSERT PLOTTING HERE ---
 
-    # 1) Define your variant labels and computed metrics:
+    #  Define variant labels and computed metrics:
     names = ["distinction between shades", "No distinction between shades", "Shade only"]
-    complexities = [2.6547, 1.8617, 0.6911]  # replace with your dynamic values
+    complexities = [2.6547, 1.8617, 0.6911]  
     accuracies = [13.7194, 10.0281, 4.1586]
     fitnesses = [12.2995, 9.0689, 3.8417]
 
-    # 2) Set up bar positions
+    #  Set up bar positions
     x = np.arange(len(names))
     width = 0.25
 
-    # 3) Create the grouped bar chart
+    #  Create the grouped bar chart
     plt.figure(figsize=(8, 5))
     plt.bar(x - width, complexities, width, label='Complexity')
     plt.bar(x, accuracies, width, label='Accuracy')
     plt.bar(x + width, fitnesses, width, label='Fitness')
 
-    # 4) Format axes and title
+    #  Format axes and title
     plt.xticks(x, names)
     plt.ylabel('Metric Value')
     plt.title('Comparison of Complexity, Accuracy & Fitness by Variant')
@@ -220,7 +219,7 @@ def test_compare_three_english_variants(env):
 
 
 def human_vs_kmean_vs_random(env):
-    # --- 1) Human‐judgment variants from English.csv ---
+    #  Human‐judgment variants from English.csv ---
     df = pd.read_csv("data/English.csv")
     perc_cols = df.columns[4:]
     # parse e.g. "20%" or "20%.1" → 0.20
@@ -249,7 +248,7 @@ def human_vs_kmean_vs_random(env):
         b = t.split(' ', 1)[-1] if ' ' in t else t
         dist2[:, idx_base[b]] += dist1[:, i_t]
 
-    # Shade only (2 words: dark vs light)
+    # Shade only
     dist3 = np.zeros((M, 2))  # col0=dark, col1=light
     for t, i_t in idx_term.items():
         if t == 'white' or t.startswith('light '):
@@ -257,7 +256,7 @@ def human_vs_kmean_vs_random(env):
         else:
             dist3[:, 0] += dist1[:, i_t]
 
-    # --- 2) KMeans & Random variants at k=2,10,18 ---
+    # ) KMeans & Random variants at k=2,10,18 ---
     cog, ms = env.cognitive_source, env.meaning_space
     sigma = env.sigma
 
@@ -281,7 +280,7 @@ def human_vs_kmean_vs_random(env):
         for k in sizes
     ]
 
-    # --- 3) Collect all variants & compute metrics ---
+    # Collect all variants & compute metrics ---
     all_vars = [
                    ("Human Full", dist1),
                    ("Human No distinction between light and dark", dist2),
@@ -294,7 +293,7 @@ def human_vs_kmean_vs_random(env):
         results.append((name, C, A, F))
     df_res = pd.DataFrame(results, columns=["Variant", "Complexity", "Accuracy", "Fitness"])
 
-    # --- 4) Plotting ---
+    # Plotting 
     out = "output"
     os.makedirs(out, exist_ok=True)
 
