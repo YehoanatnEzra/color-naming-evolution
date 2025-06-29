@@ -1,8 +1,6 @@
 # language_evolution/simulation.py
 
 """
-Main simulation script for Language Evolution.
-
 This script initializes a population of languages and simulates their evolution
 based on the principle of efficient communication, using the Information
 Bottleneck (IB) framework for fitness calculation.
