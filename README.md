@@ -103,10 +103,8 @@ You can easily:
 
 ## Feedback & Contact
 If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
-## Contact
 
 - **Email:** [yonzra12@gmail.com](mailto:yonzra12@gmail.com)
-
 - **LinkedIn:**
   - [Yehonatan Ezra](https://www.linkedin.com/in/yehonatanezra)
   - [Nitzan Ventura](https://www.linkedin.com/in/nitzan-ventura-26a2bb1b3/)
