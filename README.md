@@ -104,5 +104,5 @@ You can easily:
 ## Feedback & Contact
 If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
 - Email: yonzra12@gmail.com
-- Linkdin: www.linkedin.com/in/yehonatanezra
+- Linkdin: www.linkedin.com/in/yehonatanezra | https://www.linkedin.com/in/nitzan-ventura-26a2bb1b3/ | https://www.linkedin.com/in/gal-cesana-844509217/ |
 
