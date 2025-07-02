@@ -105,7 +105,7 @@ You can easily:
 If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
 - Email: yonzra12@gmail.com
 - Our Linkdin:
- *  www.linkedin.com/in/yehonatanezra
- *  www.linkedin.com/in/nitzan-ventura-26a2bb1b3/
- *  www.linkedin.com/in/gal-cesana-844509217/ 
+   www.linkedin.com/in/yehonatanezra
+   www.linkedin.com/in/nitzan-ventura-26a2bb1b3/
+   www.linkedin.com/in/gal-cesana-844509217/ 
 
