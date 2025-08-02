@@ -102,7 +102,10 @@ You can easily:
 * Use the codebase to model other semantic domains beyond color.
 
 ## Feedback & Contact
-If you find any issues, have questions, or suggestions for improvement, feel free to reach out.
+If you find any issues, have questions, or suggestions for improvement, feel free to reach out:
+- Email: yonzra12@gmail.com
+- Linkdin: www.linkedin.com/in/yehonatanezra
+
 
 - **Email:** [yonzra12@gmail.com](mailto:yonzra12@gmail.com)
 - **LinkedIn:**
